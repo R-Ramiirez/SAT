@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.button {
+  align-items: center;
+}
+
+table {
+  border: 2px;
+}
+
+th,
+td {
+  padding: 10px;
+  width: 10%;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr {
+  width: 100%;
+  border-bottom: 3px solid #ddd;
+  font-size: 12px;
+}
+
+tr:hover {
+  background-color: #e1e1e1;
+}
+
+.progress {
+  width: 50%;
+  background-color: #ffffff;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #0339ff;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.modal-content {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+#sin-alerta{
+  background-color: #20c53bd1 !important;
+  color: white;
+}
+
+#alerta-inicial{
+  background-color: #20c53bd1 !important;
+  color: white;
+}
+
+#alerta-baja{
+  background-color: #f7fb15 !important;
+  color: black;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f2f2f2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  display: block;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #dadada;
+}
+
+#bell-icon {
+  color: red;
+  font-size: 24px; /* Ajusta este valor según el tamaño que desees */
+}
+#circle-icon {
+  color: rgb(19, 148, 27);
+  font-size: 24px; /* Ajusta este valor según el tamaño que desees */
+}
+
+@media (max-width: 576px) {
+  .navbar-expand-sm {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .navbar-expand-sm .navbar-nav {
+      flex-direction: column;
+  }
+  .navbar-expand-sm .nav-link {
+      padding: 0.5rem 1rem;
+  }
+}
